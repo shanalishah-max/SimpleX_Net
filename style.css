@@ -77,6 +77,16 @@ nav{
     text-align: center;
 
 }
+
+.menu-items li{
+    transition: all 0.4s;
+
+}
+.menu-items li:hover{
+    color: var(--b-color);
+    cursor: pointer;
+
+}
 .t-btn button{
     padding: 1rem 2.5rem;
     border-radius: 40px;
@@ -216,7 +226,7 @@ nav{
     gap: 2rem;
     text-transform: uppercase;
     font-size: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-weight: lighter;
    
 }
@@ -225,15 +235,17 @@ nav{
     border-bottom: 1px solid white;
     background-color: white;
     margin-bottom: -4px;
+    color: var(--b-color);
 }
 .e-top h4{
     padding: 0.5rem;
     font-size: 1.5rem;
+    font-weight: lighter;
 }
 .e-bottom{
     border: 1px solid lightgray;
     width: 75%;
-    height: 35px;
+    height: 45px;
     margin: auto;
 }
 .g-card img{
@@ -243,6 +255,42 @@ nav{
 .g-card img:hover{
     scale: 1.1;
 
+}
+
+.marketing{
+    width: 75%;
+    margin: auto;
+}
+.m-top{
+    margin: 3rem 0;
+}
+.m-top p{
+    font-size: 1.5rem;
+    color: rgb(82, 82, 82);
+}
+.m-top h3{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    margin: 1rem 0;
+}
+
+.m-bottom,.m-bottom2,.m-bottom3{
+    display: flex;
+    margin-top: 3rem;
+}
+.m-title,.m-image{
+    width: 50%;
+}
+.m-title h3{
+    font-size: 2rem;
+    font-weight: lighter;
+    margin: 1rem 0;
+
+}
+.m-title p{
+    color: rgb(82, 82, 82);
+    font-size: 1.5rem;
+    margin: 1rem 0;
 }
 
 
@@ -307,12 +355,30 @@ nav{
     width: 95%;
    }
 }
+@media (max-width:1035px){
+  .g-top,.g-bottom{
+    width: 95%;
+     gap: 0.3rem;
+  }
+}
 @media (max-width:1020px){
    .s-bottom{
     gap: 5rem;
    }
    .c-title h2{
     font-size: 2.5rem;
+   }
+   .marketing{
+    width: 90%;
+   }
+   .m-top h3{
+    font-size: 2rem;
+   }
+   .m-top p{
+    font-size: 1rem;
+   }
+   .m-title p{
+    font-size: 1rem;
    }
 }
 @media (max-width:1010px){
@@ -377,6 +443,13 @@ nav{
       }
       .e-bottom{
         display: none;
+      }
+      .m-bottom,.m-bottom2,.m-bottom3{
+        flex-direction: column;
+        
+      }
+      .m-title,.m-image{
+        width: 100%;
       }
 }
 @media (max-width:635px){
